@@ -1,0 +1,51 @@
+{
+    "employeeDetails": [{
+        "id": 1,
+        "name": "Ayush",
+        "department": "I.T",
+        "salary": 1000,
+        "experience": 2
+    }, {
+        "id": 2,
+        "name": "Bobo",
+        "department": "Project manager",
+        "salary": 100000,
+        "experience": 1
+    }, {
+        "id": 3,
+        "name": "Baby",
+        "department": "developer",
+        "salary": 2000,
+        "experience": 3
+    },{
+        "id": 4,
+        "name": "Nilesh",
+        "department": "Designer",
+        "salary": 5500,
+        "experience": 5
+    },{
+        "id": 5,
+        "name": "amol",
+        "department": "Manager",
+        "salary": 100500,
+        "experience": 8
+    },{
+        "id": 6,
+        "name": "ganesh",
+        "department": "Accountant",
+        "salary": 1000,
+        "experience": 4
+    },{
+        "id": 7,
+        "name": "Jitu",
+        "department": "Accountant",
+        "salary": 3000,
+        "experience": 2
+    },{
+        "id": 8,
+        "name": "Ritu",
+        "department": "developer",
+        "salary": 3000,
+        "experience": 2
+    }]
+}

@@ -1,0 +1,30 @@
+<div class="container" ng-init="employeeList()">
+    <pagination ng-if="employeeDetails.length > 0" employee-list="$parent.employeeDetails"></pagination>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="cursor {{arrowIdCls}}" ng-click="sortRecord('id')">Id<span class="caret"></span></th>
+                <th class="cursor {{arrowNameCls}}" ng-click="sortRecord('name')">Employee Name <span class="caret"></span></th>
+                <th class="cursor {{arrowDepartmentCls}}" ng-click="sortRecord('department')">Department Name <span class="caret"></span></th>
+                <th class="cursor {{arrowSalaryCls}}" ng-click="sortRecord('salary')">salary <span class="caret"></span></th>
+                <th class="cursor {{arrowExperienceCls}}" ng-click="sortRecord('experience')">Experience (yrs) <span class="caret"></span></th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="singleDetails in employeeDetails | orderBy:sortValue:reverse">
+                <th scope="row">{{singleDetails.id}}</th>
+                <td>{{singleDetails.name}}</td>
+                <td>{{singleDetails.department}}</td>
+                <td>${{singleDetails.salary}}</td>
+                <td>{{singleDetails.experience}}</td>
+                <td><a class="btn btn-link" ng-click="deleteEmployee(singleDetails.id)">Delete</a></td>
+            </tr>
+        </tbody>
+        <tbody ng-show="(employeeDetails).length==0">
+            <tr>
+                <td class="danger text-center" colspan="6">No employee are presents.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

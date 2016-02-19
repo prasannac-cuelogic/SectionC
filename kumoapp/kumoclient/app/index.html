@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="kumo" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kumo App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div ng-include="'modules/common-views/header.html'"></div>
+    <div ng-view></div>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <!-- Common files to be loaded first -->
+    <!-- <script src="config/environment.js"></script> -->
+    <script src="common/factory/index.js"></script>
+    <script src="common/factory/employee.js"></script>
+    <script src="common/directives/index.js"></script>
+    <script src="common/directives/directives.js"></script>
+    <!-- User module -->
+    <script src="modules/employee/employee.controller.js"></script>
+    <script src="modules/employee/employee.route.js"></script>
+    <script src="modules/employee/index.js"></script>
+    <script src="modules/employee-Activity/employeeactivity.controller.js"></script>
+    <script src="modules/employee-Activity/employeeactivity.route.js"></script>
+    <script src="modules/employee-Activity/index.js"></script>
+    <!-- Main module -->
+    <script src="app.js"></script>
+</body>
+
+</html>

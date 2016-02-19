@@ -1,0 +1,21 @@
+<div class="container" ng-init="employeeActivity()">
+    <pagination ng-if="employeeActivity.length > 0" employee-list="$parent.employeeActivity"></pagination>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="cursor {{arrowIdCls}}" ng-click="sortRecord('id')">Id<span class="caret"></span></th>
+                <th class="cursor {{arrowNameCls}}" ng-click="sortRecord('name')">Employee Name<span class="caret"></span></th>
+                <th>Action Performed</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="singleActivityDetails in employeeActivity | orderBy:sortValue:reverse">
+                <th scope="row">{{singleActivityDetails.id}}</th>
+                <td>{{singleActivityDetails.employeeName}}</td>
+                <td>{{singleActivityDetails.actionPerformed}}</td>
+                <td>{{singleActivityDetails.dateTime | date : 'MM/dd/yyyy':'UTC'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

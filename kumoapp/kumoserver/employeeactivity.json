@@ -1,0 +1,28 @@
+{
+    "employeeActivity": [{
+        "id": 1,
+        "employeeName": "jatin",
+        "actionPerformed": "Jatin has deleted the prasanna record",
+        "dateTime": "2015-11-29T13:04:34.512Z"
+    }, {
+        "id": 2,
+        "employeeName": "ram",
+        "actionPerformed": "Ram has deleted the prasanna record",
+        "dateTime": "2015-12-29T13:04:34.512Z"
+    }, {
+        "id": 3,
+        "employeeName": "teja",
+        "actionPerformed": "Teja has deleted the prasanna record",
+        "dateTime": "2016-01-29T13:04:34.512Z"
+    }, {
+        "id": 4,
+        "employeeName": "Asha",
+        "actionPerformed": "Ram has deleted the prasanna record",
+        "dateTime": "2016-01-29T13:04:34.512Z"
+    }, {
+        "id": 5,
+        "employeeName": "Raghu",
+        "actionPerformed": "Ram has deleted the prasanna record",
+        "dateTime": "2016-01-29T13:04:34.512Z"
+    }]
+}

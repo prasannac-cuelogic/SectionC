@@ -1,0 +1,17 @@
+<nav class="fr">
+    <ul class="pagination">
+        <li>
+            <a ng-class="{'disabled' : currentPage == 1}" href="" ng-click="setData(currentPage, 'prev')" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li ng-repeat="number in range()">
+            <a ng-click="setData(number)" href="">{{number+1}}</a>
+        </li>
+        <li>
+            <a ng-class="{'disabled' : currentPage == pageCount}" ng-click="setData(currentPage, 'next')" href="" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
